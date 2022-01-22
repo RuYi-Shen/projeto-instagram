@@ -1,9 +1,15 @@
 @media (max-width: 935px) {
-    .container {
-      display: block;
+
+    .main-page-content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .menu {
-      height: 100px;
-      width: 100%; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
+    .side-bar{
+      display: none;
+    }
+    .bar-top-content{
+      margin: 0 21px;
     }
 }
+

@@ -1,9 +1,29 @@
 @media (max-width: 614px) {
-    .container {
-      display: block;
-    }
-    .menu {
-      height: 100px;
-      width: 100%; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
-    }
+  .bar-top{
+    display: none;
+  }
+  .icons{
+    justify-content: end;
+  }
+  .bar-top-mobile{
+    width: 100vw;
+  }
+  .main-page{
+    margin-top: 54px;
+  }
+  .stories{
+    background: none;
+    margin-bottom: 0;
+    width: 100vw;
+  }
+  .stories ion-icon{
+    display: none;
+  }
+  .posts{
+    width: 100vw;
+  }
+  .bar-bottom{
+    display: flex;
+    width: 100vw;
+  }
 }
