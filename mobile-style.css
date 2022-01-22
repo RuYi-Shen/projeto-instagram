@@ -1,0 +1,9 @@
+@media (max-width: 614px) {
+    .container {
+      display: block;
+    }
+    .menu {
+      height: 100px;
+      width: 100%; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
+    }
+}
