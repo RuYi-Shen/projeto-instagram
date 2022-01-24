@@ -5,11 +5,9 @@ body{
     background-color: #fafafa;
     font-family: 'Roboto', sans-serif;
 }
-
 span{
     font-weight: bold;
 }
-
 ion-icon {
     font-size: 20px; 
 }
@@ -26,7 +24,6 @@ ion-icon {
     left: 0;
     z-index: 2;
 }
-
 .bar-top-mobile{
     border-bottom: 1px solid #DBDBDB;
     height: 54px;
@@ -40,32 +37,26 @@ ion-icon {
     left: 0;
     z-index: 1;
 }
-
-
 .bar-top-content{
     height: 28px;
     width: 935px;
     display: flex;
     justify-content: space-between;
 }
-
 .logo-name{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .vertical-line{
     width: 1px;
     height: 22px;
     background-color: #DBDBDB;
     margin: 0 10px;
 }
-
 .name{
    height: 28px;
   }
-
 input{
     width: 215px;
     height: 28px;
@@ -76,25 +67,21 @@ input{
     color: #979797;
     ;
 }
-
 .icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100px;
 }
-
 .main-page{
     margin-top: 88px;
     display: flex;
     justify-content: center;
     
 }
-
 .main-page-content{
     width: 935px;
 }
-
 .stories{
     height: 118px;
     width: 614px;
@@ -108,15 +95,28 @@ input{
     overflow: hidden;
     position: relative;
 }
-
-.side-bar{
-    position: fixed;
-    right: calc((100% - 935px)/2);
-    top: 88px;
-    width: 293px;
-    height: 466px;
+.storie{
+    position: relative;
+    text-align: center;
+    margin-right: 14px;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 400;
 }
-
+.storie-background{
+    width: 66px;
+    height: 66px;
+}
+.stories ion-icon{
+    position: absolute;
+    font-size: 26px;
+    top: 46px;
+    right: 8px;
+    z-index: 1;
+    color:white;
+    border-radius: 50%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
 .post{
     height: 749px;
     width: 614px;
@@ -125,11 +125,9 @@ input{
     border-radius: 3px;
     margin-bottom: 60px;
 }
-.post img{
-    width: 612px;
-    height: 612px;
+.video{
+    height: 597px;
 }
-
 .post-bar-top{
     height: 61px;
     display: flex;
@@ -137,7 +135,6 @@ input{
     align-items: center;
     margin: auto 17px;
 }
-
 .post-bar-top img{
     height: 32px;
     width: 32px;
@@ -150,13 +147,15 @@ input{
     font-weight: 500;
     font-size: 14px;
 }
-
+.post-image{
+    width: 612px;
+    height: 612px;
+}
 .post-bar-bottom{
     align-items: center;
     margin: 12px 17px;
     height: 76px;
 }
-
 .post-icons{
     display: flex;
     justify-content: space-between;
@@ -166,7 +165,6 @@ input{
     display: flex;
     justify-content: space-between;
 }
-
 .liked img{
     height: 20px;
     width: 20px;
@@ -181,7 +179,6 @@ input{
     font-size: 14px;
     margin-top: 5px;
 }
-
 .page-logo{
     width: 56px;
     height: 56px;
@@ -190,49 +187,24 @@ input{
     top: 5px;
     left: 5px;
 }
-
-.storie-background{
-    width: 66px;
-    height: 66px;
+.side-bar{
+    position: fixed;
+    right: calc((100% - 935px)/2);
+    top: 88px;
+    width: 293px;
+    height: 466px;
 }
-
-.storie{
-    position: relative;
-    text-align: center;
-    margin-right: 14px;
-    color: #262626;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.stories ion-icon{
-    position: absolute;
-    font-size: 26px;
-    top: 46px;
-    right: 8px;
-    z-index: 1;
-    color:white;
-    border-radius: 50%;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-.video{
-    height: 597px;
-}
-
 .user{
     margin-top: 23px;
     display: flex;
     align-items: center;
 }
-
 .user img{
     width: 56px;
     height: 56px;
     border-radius: 50%;
     margin-right: 17px;
 }
-
 .user-name{
     font-size: 14px;
     font-weight: 300;
@@ -244,12 +216,55 @@ input{
     margin-top: 24px;
     font-size: 12px;
 }
-
+.about{
+    font-size: 11px;
+    color: #c7c7c7;
+    font-weight: 400;
+    margin-top: 33px;
+    line-height: 13px;
+    
+}
+.about p{
+    margin-bottom: 18px;
+}
+.user img{
+  box-shadow: 1px 1px 5px grey;
+}
+.pages{
+    width: 293px;
+}
+.page{
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-info{
+    display: flex;
+    justify-content: space-between;
+}
+.page-info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.page-name{
+    width: 200px;
+    font-size: 14px;
+}
+.bar-bottom{
+    height: 54px;
+    display: none;
+    justify-content: space-between;
+    padding: 20px; 
+    align-items: center; 
+    border-top: 1px solid #DBDBDB;
+}
 .grey-300{
     color: #BEBEBE;
     font-weight: 300;
 }
-
 .grey-400{
     color: #BEBEBE;
     font-weight: 400;
@@ -259,62 +274,8 @@ input{
     color: #BEBEBE;
     font-weight: 500;
 }
-
-.about{
-    font-size: 11px;
-    color: #c7c7c7;
-    font-weight: 400;
-    margin-top: 33px;
-    line-height: 13px;
-    
-}
-
-.about p{
-    margin-bottom: 18px;
-}
-
-.user img{
-  box-shadow: 1px 1px 5px grey;
-}
-
-.pages{
-    width: 293px;
-}
-
-.page{
-    margin-top: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page-info{
-    display: flex;
-    justify-content: space-between;
-}
-
-.page-info img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 11px;
-}
-
-.page-name{
-    width: 200px;
-    font-size: 14px;
-}
 .blue{
     color: #139EF2;
     font-size: 12px;
     font-weight: 500;
-}
-
-.bar-bottom{
-    height: 54px;
-    display: none;
-    justify-content: space-between;
-    padding: 20px; 
-    align-items: center; 
-    border-top: 1px solid #DBDBDB;
 }

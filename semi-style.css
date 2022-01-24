@@ -1,15 +1,14 @@
 @media (max-width: 935px) {
-
-    .main-page-content{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .side-bar{
-      display: none;
-    }
-    .bar-top-content{
-      margin: 0 21px;
-    }
+  .bar-top-content{
+    margin: 0 21px;
+  }  
+  .main-page-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .side-bar{
+    display: none;
+  }
 }
 
